@@ -76,10 +76,8 @@ params:
     content: <----------------->
     Title: "Rahul Mishra "
     content: <----------------->
-    Content: I am a computer science and  engineering student specialising in cyber security.
-             here you will find all my learnings and projects which i am doing while exploring the world of cyber security.  
-
-  socialIcons:
+    Content: I'm a Computer Science student focused on cybersecurity. 
+              Here, i document my journey and discoveries as i explore the field.
     - name: github
       url: "https://github.com/rivian96/"
     - name: linkedin
