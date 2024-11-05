@@ -73,8 +73,11 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    content: <----------------->
+    Title: "Rahul Mishra "
+    content: <----------------->
+    Content: I am a computer science and  engineering student specialising in cyber security.
+             here you will find all my learnings and projects which i am doing while exploring the world of cyber security.  
 
   socialIcons:
     - name: github
@@ -119,9 +122,9 @@ menu:
       name: blogs
       url: /blogs/
       weight: 10
-    - identifier: experience
-      name: experience
-      url: /experience/
+    - identifier: projects
+      name: projects
+      url: /projects/
       weight: 20
     # - identifier: categories
     #   name: example.org
