@@ -1,4 +1,12 @@
-# Packers
+---
+title: "Packers Packing"
+date: 2025-05-05
+draft: false
+---
+
+
+Packing is like wrapping a program in layers to hide its contents. Malware authors use packers...
+
 
 **Packing** is like wrapping a program in layers to hide its contents. Malware authors use packers to **compress or encrypt** the original program and add a small **unpacking stub**. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub **decompresses** (or decrypts) the real malicious code into memory and then hands control to it ([courses.cs.umbc.edu](https://courses.cs.umbc.edu/undergraduate/CMSC491malware/CMSC%20449%20-%20Lec3%20-%20Hashing%20and%20Packing.pdf#:~:text=%EF%82%A7%20Compress%20original%20program%20and,into%20memory%20and%20runs%20it) ,[redscan.com](https://www.redscan.com/news/redscan-labs-malware-unpacking-uncover-hidden-cyber-threats/#:~:text=Software%20packers%20function%20by%20compressing,a%20decoder%20stub%20for%20decompression)). This means on disk you only see a wrapper, not the actual malware. Packing makes static analysis very hard, because the real code (and its strings or import table) stays hidden until runtime.
 
