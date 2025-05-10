@@ -1,4 +1,8 @@
-# brbbot analysis
+---
+title: "Analysing Brbbot"
+date: 2025-05-10
+draft: false
+---
 
 In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
 
