@@ -32,12 +32,21 @@ Packing is like wrapping a program in layers to hide its contents. Malware autho
       <link>//localhost:1313/blogs/analysing-my-first-malware/</link>
       <pubDate>Sun, 03 Nov 2024 09:32:31 -0500</pubDate>
       <guid>//localhost:1313/blogs/analysing-my-first-malware/</guid>
-      <description>This blog goes through the main phases of malware analysis which includes: static analysis, behaviour analysis,emulation techniques and code analysis.
-brbbot Network Activities DNS Query (Frame 7)
+      <description>This /////blogs
+/
+/
+/
+goes through the main phases of malware analysis which includes: static analysis, behaviour analysis,emulation techniques and code analysis.
+brbbot Network Activities ![DNS Query Image](///////blogs
+/
+/
+/
+/
+first-malware/image-20241020115414-3yrfrr7.png)
+DNS Query (Frame 7)
 The source IP 192.168.44.129 sends a DNS query to 192.168.44.128 (likely a DNS server) asking for the IP address corresponding to the domain brb.3dtuts.by.
 Query ID: 0xf0a8
-Purpose of Query ID (0xf0a8)
-Uniqueness: Each DNS query has a unique Query ID to differentiate it from other queries sent to the DNS server.</description>
+Purpose of Query ID (0xf0a8)</description>
     </item>
   </channel>
 </rss>

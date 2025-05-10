@@ -6,12 +6,21 @@ Malware (short for malicious software) is any software intentionally designed to
 ‍
 why malware analysis is Important
 Malware analysis is important because it helps us understand how harmful software works, what it targets, and how it spreads. This knowledge allows security tools to detect and block threats more effectively....</p></div><footer class=entry-footer><span title='2025-05-10 00:00:00 +0000 UTC'>May 10, 2025</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;2116 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Unpacking Malware" href=//localhost:1313/blogs/unpacking-malware/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Packers</h2></header><div class=entry-content><p>Packing is like wrapping a program in layers to hide its contents. Malware authors use packers…
-Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses....</p></div><footer class=entry-footer><span title='2025-05-05 00:00:00 +0000 UTC'>May 5, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1296 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Packers" href=//localhost:1313/blogs/packers/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Analysing My First Malware</h2></header><div class=entry-content><p>This blog goes through the main phases of malware analysis which includes: static analysis, behaviour analysis,emulation techniques and code analysis.
-brbbot Network Activities DNS Query (Frame 7)
+Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses....</p></div><footer class=entry-footer><span title='2025-05-05 00:00:00 +0000 UTC'>May 5, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1296 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Packers" href=//localhost:1313/blogs/packers/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Analysing My First Malware</h2></header><div class=entry-content><p>This /////blogs
+/
+/
+/
+goes through the main phases of malware analysis which includes: static analysis, behaviour analysis,emulation techniques and code analysis.
+brbbot Network Activities ![DNS Query Image](///////blogs
+/
+/
+/
+/
+first-malware/image-20241020115414-3yrfrr7.png)
+DNS Query (Frame 7)
 The source IP 192.168.44.129 sends a DNS query to 192.168.44.128 (likely a DNS server) asking for the IP address corresponding to the domain brb.3dtuts.by.
 Query ID: 0xf0a8
-Purpose of Query ID (0xf0a8)
-Uniqueness: Each DNS query has a unique Query ID to differentiate it from other queries sent to the DNS server....</p></div><footer class=entry-footer><span title='2024-11-03 09:32:31 -0500 EST'>November 3, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;870 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Analysing My First Malware" href=//localhost:1313/blogs/analysing-my-first-malware/></a></article></main><footer class=footer><span>&copy; 2025 <a href=//localhost:1313/>Rahul Mishra</a></span> ·
+Purpose of Query ID (0xf0a8)...</p></div><footer class=entry-footer><span title='2024-11-03 09:32:31 -0500 EST'>November 3, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;1007 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Analysing My First Malware" href=//localhost:1313/blogs/analysing-my-first-malware/></a></article></main><footer class=footer><span>&copy; 2025 <a href=//localhost:1313/>Rahul Mishra</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
