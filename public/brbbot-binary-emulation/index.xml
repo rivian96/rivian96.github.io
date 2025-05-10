@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Brbbot Binary Emulations on Rahul Mishra</title>
+    <link>//localhost:1313/brbbot-binary-emulation/</link>
+    <description>Recent content in Brbbot Binary Emulations on Rahul Mishra</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/brbbot-binary-emulation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/brbbot-binary-emulation/analysing--brbbot.exe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/brbbot-binary-emulation/analysing--brbbot.exe/</guid>
+      <description>Analysing brbbot.exe In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
+‍
+Static analysis
+The sample communicates over the internet, possibly to a C2 server, using DNS resolution, HTTP GET/POST, and low-level sockets. It builds and sends HTTP requests, reads headers, and handles responses.
+‍
+The malware uses encryption to protect its data or payload, likely for obfuscation or C2 encryption.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/brbbot-binary-emulation/analysing--brbbot.exe/cyber-society/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/brbbot-binary-emulation/analysing--brbbot.exe/cyber-society/</guid>
+      <description>cyber society rules and regulations ctf (simple) can take from tryhack me and pico ctf etc. and pi ‍ ‍</description>
+    </item>
+  </channel>
+</rss>

@@ -20,33 +20,16 @@ why malware analysis is Important
 Malware analysis is important because it helps us understand how harmful software works, what it targets, and how it spreads. This knowledge allows security tools to detect and block threats more effectively.</description>
     </item>
     <item>
-      <title>Packers</title>
-      <link>//localhost:1313/blogs/packers/</link>
-      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blogs/packers/</guid>
-      <description>Packing is like wrapping a program in layers to hide its contents. Malware authors use packers&amp;hellip;
-Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses.</description>
-    </item>
-    <item>
-      <title>Analysing My First Malware</title>
-      <link>//localhost:1313/blogs/analysing-my-first-malware/</link>
-      <pubDate>Sun, 03 Nov 2024 09:32:31 -0500</pubDate>
-      <guid>//localhost:1313/blogs/analysing-my-first-malware/</guid>
-      <description>This /////blogs
-/
-/
-/
-goes through the main phases of malware analysis which includes: static analysis, behaviour analysis,emulation techniques and code analysis.
-brbbot Network Activities ![DNS Query Image](///////blogs
-/
-/
-/
-/
-first-malware/image-20241020115414-3yrfrr7.png)
-DNS Query (Frame 7)
-The source IP 192.168.44.129 sends a DNS query to 192.168.44.128 (likely a DNS server) asking for the IP address corresponding to the domain brb.3dtuts.by.
-Query ID: 0xf0a8
-Purpose of Query ID (0xf0a8)</description>
+      <title></title>
+      <link>//localhost:1313/blogs/brbbot-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/brbbot-analysis/</guid>
+      <description>brbbot analysis In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
+‍
+Static analysis
+The sample communicates over the internet, possibly to a C2 server, using DNS resolution, HTTP GET/POST, and low-level sockets. It builds and sends HTTP requests, reads headers, and handles responses.
+‍
+The malware uses encryption to protect its data or payload, likely for obfuscation or C2 encryption.</description>
     </item>
   </channel>
 </rss>
