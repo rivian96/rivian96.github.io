@@ -12,13 +12,15 @@ In the previous article we unpacked the sample using various methods. In this po
 
 ![image](/blogs/first-malware/image-20250509150843-q80g296.png)
 
+
+![image](/blogs/first-malware/image-20250507093619-kblvd2b.png)
+
 The sample communicates over the **internet**, possibly to a C2 server, using **DNS resolution**, **HTTP GET/POST**, and **low-level sockets**. It builds and sends HTTP requests, reads headers, and handles responses.
 
 ‍
 
 The malware uses **encryption** to protect its data or payload, likely for **obfuscation** or **C2 encryption**.
 
-![image](/blogs/first-malware/image-20250507093619-kblvd2b.png)
 
 ‍
 
