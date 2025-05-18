@@ -21,6 +21,15 @@ The sample communicates over the internet, possibly to a C2 server, using DNS re
 The malware uses encryption to protect its data or payload, likely for obfuscation or C2 encryption.</description>
     </item>
     <item>
+      <title>Return to mprotect (defeating NX)</title>
+      <link>//localhost:1313/blogs/return-to-mprotect/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/return-to-mprotect/</guid>
+      <description>Hello everyone!
+I’ve been exploring binary exploitation and found Return-Oriented Programming (ROP) really fascinating. In this post, I’ll share what I’ve learned so far. Since I’m still learning, if you spot any mistakes or have better ideas, please let me know!
+Before we dive in, make sure you’re familiar with buffer overflows and ret2libc attacks. If you’re already comfortable with those, great let’s get started! Otherwise, I recommend checking those topics first and then coming back here.</description>
+    </item>
+    <item>
       <title>Unpacking Malware</title>
       <link>//localhost:1313/blogs/unpacking-malware/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
