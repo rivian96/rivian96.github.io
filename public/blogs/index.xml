@@ -25,11 +25,8 @@ The malware uses encryption to protect its data or payload, likely for obfuscati
       <link>//localhost:1313/blogs/unpacking-malware/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/unpacking-malware/</guid>
-      <description>What is a Malware
-Malware (short for malicious software) is any software intentionally designed to cause damage to computers, servers, networks, or data. It is used by cybercriminals to steal, encrypt, or delete data, hijack systems, spy on user activity, or disrupt operations.
-‍
-why malware analysis is Important
-Malware analysis is important because it helps us understand how harmful software works, what it targets, and how it spreads. This knowledge allows security tools to detect and block threats more effectively.</description>
+      <description>Malware Packing
+Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses.cs.umbc.edu ,redscan.com). This means on disk you only see a wrapper, not the actual malware.</description>
     </item>
   </channel>
 </rss>
