@@ -11,8 +11,13 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/blogs/return-to-mprotect/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/blogs/unpacking-malware/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blogs/stack-allignment-problem/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>

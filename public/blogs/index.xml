@@ -6,8 +6,19 @@
     <description>Recent content in Blogs on Rahul Mishra</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Stack allignment problem</title>
+      <link>//localhost:1313/blogs/stack-allignment-problem/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/stack-allignment-problem/</guid>
+      <description>While learning about ret2libc exploitation, I encountered a stack alignment issue that initially confused me. After spending some time debugging, I finally understood why we add that extra ret instruct for the solution. I thought it would be valuable to share this insight with you all, in case it helps someone facing the same problem.
+‍
+Lets look at the memory layout
+‍
+Our key interest Right now, is the stack!</description>
+    </item>
     <item>
       <title>Analysing Brbbot</title>
       <link>//localhost:1313/blogs/brbbot-analysis/</link>
