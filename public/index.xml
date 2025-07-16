@@ -2,17 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rahul Mishra</title>
-    <link>//localhost:35623/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Rahul Mishra</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:35623/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Process Explorer</title>
+      <link>//localhost:1313/blogs/process-explorer/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/process-explorer/</guid>
+      <description>Process Explorer is a free, powerful system Monitoring tool from Microsoft’s Sysinternals suite that goes far beyond the builtin Task Manager.
+‍
+To ensure Process Explorer always runs with administrative privileges:
+Right‑click on procexp64.exe​ (or its shortcut) and select Properties. Switch to the Compatibility tab. Under Settings, check Run this program as an administrator. Click OK to save. ‍
+‍
+There are more columns present here compared to task manager</description>
+    </item>
     <item>
       <title>The Stack allignment problem</title>
-      <link>//localhost:35623/blogs/stack-allignment-problem/</link>
+      <link>//localhost:1313/blogs/stack-allignment-problem/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:35623/blogs/stack-allignment-problem/</guid>
+      <guid>//localhost:1313/blogs/stack-allignment-problem/</guid>
       <description>While learning about ret2libc exploitation, I encountered a stack alignment issue that initially confused me. After spending some time debugging, I finally understood why we add that extra ret instruct for the solution. I thought it would be valuable to share this insight with you all, in case it helps someone facing the same problem.
 ‍
 Lets look at the memory layout
@@ -21,9 +33,9 @@ Our key interest Right now, is the stack!</description>
     </item>
     <item>
       <title>Analysing Brbbot</title>
-      <link>//localhost:35623/blogs/brbbot-analysis/</link>
+      <link>//localhost:1313/blogs/brbbot-analysis/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:35623/blogs/brbbot-analysis/</guid>
+      <guid>//localhost:1313/blogs/brbbot-analysis/</guid>
       <description>In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
 ‍
 Static analysis
@@ -33,18 +45,18 @@ The malware uses encryption to protect its data or payload, likely for obfuscati
     </item>
     <item>
       <title>Return to mprotect (defeating NX)</title>
-      <link>//localhost:35623/blogs/return-to-mprotect/</link>
+      <link>//localhost:1313/blogs/return-to-mprotect/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:35623/blogs/return-to-mprotect/</guid>
+      <guid>//localhost:1313/blogs/return-to-mprotect/</guid>
       <description>Hello everyone!
 I’ve been exploring binary exploitation and found Return-Oriented Programming (ROP) really fascinating. In this post, I’ll share what I’ve learned so far. Since I’m still learning, if you spot any mistakes or have better ideas, please let me know!
 Before we dive in, make sure you’re familiar with buffer overflows and ret2libc attacks. If you’re already comfortable with those, great let’s get started! Otherwise, I recommend checking those topics first and then coming back here.</description>
     </item>
     <item>
       <title>Unpacking Malware</title>
-      <link>//localhost:35623/blogs/unpacking-malware/</link>
+      <link>//localhost:1313/blogs/unpacking-malware/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:35623/blogs/unpacking-malware/</guid>
+      <guid>//localhost:1313/blogs/unpacking-malware/</guid>
       <description>Malware Packing
 Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses.cs.umbc.edu ,redscan.com). This means on disk you only see a wrapper, not the actual malware.</description>
     </item>

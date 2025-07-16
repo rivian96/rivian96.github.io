@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:35623/blogs/</loc>
+    <loc>//localhost:1313/blogs/</loc>
+    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blogs/process-explorer/</loc>
+    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blogs/stack-allignment-problem/</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35623/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35623/blogs/stack-allignment-problem/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35623/blogs/brbbot-analysis/</loc>
+    <loc>//localhost:1313/blogs/brbbot-analysis/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35623/blogs/return-to-mprotect/</loc>
+    <loc>//localhost:1313/blogs/return-to-mprotect/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35623/blogs/unpacking-malware/</loc>
+    <loc>//localhost:1313/blogs/unpacking-malware/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35623/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:35623/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
