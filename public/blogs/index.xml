@@ -4,61 +4,91 @@
     <title>Blogs on Rahul Mishra</title>
     <link>//localhost:1313/blogs/</link>
     <description>Recent content in Blogs on Rahul Mishra</description>
-    <generator>Hugo -- 0.131.0</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Mode debugging using windbg</title>
+      <link>//localhost:1313/blogs/user-mode-debugging-with-windbg/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/user-mode-debugging-with-windbg/</guid>
+      <description>&lt;p&gt;The way to start Debugging in User Mode is in one of two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Attach to an existing Process then start looking into it.&lt;/li&gt;
+&lt;li&gt;Launch an executable which will create a process based on that executable and attach to it immediately&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the first option, Attach to an existing Process&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/user-mode-debugging-with-windbg/image-20250825131802-vgh1ywn.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/user-mode-debugging-with-windbg/image-20250825140616-3wy94l3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Notepad can no longer run any code because all the threads in notepad are suspended.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/user-mode-debugging-with-windbg/image-20250825141116-xjndhud.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Process Explorer</title>
       <link>//localhost:1313/blogs/process-explorer/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/process-explorer/</guid>
-      <description>Process Explorer is a free, powerful system Monitoring tool from Microsoft’s Sysinternals suite that goes far beyond the builtin Task Manager.
-‍
-To ensure Process Explorer always runs with administrative privileges:
-Right‑click on procexp64.exe​ (or its shortcut) and select Properties. Switch to the Compatibility tab. Under Settings, check Run this program as an administrator. Click OK to save. ‍
-‍
-There are more columns present here compared to task manager</description>
+      <description>&lt;p&gt;&lt;strong&gt;Process Explorer&lt;/strong&gt; is a free, powerful system Monitoring tool from Microsoft’s Sysinternals suite that goes far beyond the builtin Task Manager.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/process-explorer/image-20250710133028-2rbu61j.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To ensure Process Explorer always runs with administrative privileges:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Right‑click&lt;/strong&gt; on &lt;code&gt;procexp64.exe&lt;/code&gt;​ (or its shortcut) and select &lt;strong&gt;Properties&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Switch to the &lt;strong&gt;Compatibility&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;Settings&lt;/strong&gt;, check &lt;strong&gt;Run this program as an administrator&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt; to save.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/process-explorer/image-20250710140933-ywxjjlh.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;There are  more columns present here compared to task manager&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;9bc95adc-2baf-4759-8fdf-ebc851f9e191&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/process-explorer/9bc95adc-2baf-4759-8fdf-ebc851f9e191-20250710134603-fksr7hg.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Stack allignment problem</title>
       <link>//localhost:1313/blogs/stack-allignment-problem/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/stack-allignment-problem/</guid>
-      <description>While learning about ret2libc exploitation, I encountered a stack alignment issue that initially confused me. After spending some time debugging, I finally understood why we add that extra ret instruct for the solution. I thought it would be valuable to share this insight with you all, in case it helps someone facing the same problem.
-‍
-Lets look at the memory layout
-‍
-Our key interest Right now, is the stack!</description>
+      <description>&lt;p&gt;While learning about ret2libc exploitation, I encountered a stack alignment issue that initially confused me. After spending some time debugging, I finally understood why we add that extra ret instruct for the solution. I thought it would be valuable to share this insight with you all, in case it helps someone facing the same problem.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lets look at the memory layout&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/the-stack-allignment-problem/image-20250615121128-wuoskjb.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our key interest Right now, is the stack!&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Analysing Brbbot</title>
       <link>//localhost:1313/blogs/brbbot-analysis/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/brbbot-analysis/</guid>
-      <description>In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
-‍
-Static analysis
-The sample communicates over the internet, possibly to a C2 server, using DNS resolution, HTTP GET/POST, and low-level sockets. It builds and sends HTTP requests, reads headers, and handles responses.
-‍
-The malware uses encryption to protect its data or payload, likely for obfuscation or C2 encryption.</description>
+      <description>&lt;p&gt;In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Static analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/first-malware/image-20250509150843-q80g296.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/blogs/first-malware/image-20250507093619-kblvd2b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The sample communicates over the &lt;strong&gt;internet&lt;/strong&gt;, possibly to a C2 server, using &lt;strong&gt;DNS resolution&lt;/strong&gt;, &lt;strong&gt;HTTP GET/POST&lt;/strong&gt;, and &lt;strong&gt;low-level sockets&lt;/strong&gt;. It builds and sends HTTP requests, reads headers, and handles responses.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;The malware uses &lt;strong&gt;encryption&lt;/strong&gt; to protect its data or payload, likely for &lt;strong&gt;obfuscation&lt;/strong&gt; or &lt;strong&gt;C2 encryption&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Return to mprotect (defeating NX)</title>
       <link>//localhost:1313/blogs/return-to-mprotect/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/return-to-mprotect/</guid>
-      <description>Hello everyone!
-I’ve been exploring binary exploitation and found Return-Oriented Programming (ROP) really fascinating. In this post, I’ll share what I’ve learned so far. Since I’m still learning, if you spot any mistakes or have better ideas, please let me know!
-Before we dive in, make sure you’re familiar with buffer overflows and ret2libc attacks. If you’re already comfortable with those, great let’s get started! Otherwise, I recommend checking those topics first and then coming back here.</description>
+      <description>&lt;p&gt;Hello everyone!&lt;/p&gt;
+&lt;p&gt;I’ve been exploring binary exploitation and found &lt;strong&gt;Return-Oriented Programming (ROP)&lt;/strong&gt;  really fascinating. In this post, I’ll share what I’ve learned so far. Since I’m still learning, if you spot any mistakes or have better ideas, please let me know!&lt;/p&gt;
+&lt;p&gt;Before we dive in, make sure you’re familiar with &lt;strong&gt;buffer overflows&lt;/strong&gt; and &lt;strong&gt;ret2libc&lt;/strong&gt; attacks. If you’re already comfortable with those, great let’s get started! Otherwise, I recommend checking those topics first and then coming back here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Unpacking Malware</title>
       <link>//localhost:1313/blogs/unpacking-malware/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blogs/unpacking-malware/</guid>
-      <description>Malware Packing
-Packing is like wrapping a program in layers to hide its contents. Malware authors use packers to compress or encrypt the original program and add a small unpacking stub. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub decompresses (or decrypts) the real malicious code into memory and then hands control to it (courses.cs.umbc.edu ,redscan.com). This means on disk you only see a wrapper, not the actual malware.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Malware Packing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Packing&lt;/strong&gt; is like wrapping a program in layers to hide its contents. Malware authors use packers to &lt;strong&gt;compress or encrypt&lt;/strong&gt; the original program and add a small &lt;strong&gt;unpacking stub&lt;/strong&gt;. The stub is a tiny piece of code that runs first. When the packed file is executed, the stub &lt;strong&gt;decompresses&lt;/strong&gt; (or decrypts) the real malicious code into memory and then hands control to it (&lt;a href=&#34;https://courses.cs.umbc.edu/undergraduate/CMSC491malware/CMSC%20449%20-%20Lec3%20-%20Hashing%20and%20Packing.pdf#:~:text=%EF%82%A7%20Compress%20original%20program%20and,into%20memory%20and%20runs%20it&#34;&gt;courses.cs.umbc.edu&lt;/a&gt; ,&lt;a href=&#34;https://www.redscan.com/news/redscan-labs-malware-unpacking-uncover-hidden-cyber-threats/#:~:text=Software%20packers%20function%20by%20compressing,a%20decoder%20stub%20for%20decompression&#34;&gt;redscan.com&lt;/a&gt;). This means on disk you only see a wrapper, not the actual malware. Packing makes static analysis very hard, because the real code (and its strings or import table) stays hidden until runtime.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

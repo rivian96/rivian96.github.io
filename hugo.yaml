@@ -1,6 +1,8 @@
 baseURL: 
 title: Rahul Mishra 
-paginate: 5
+pagination:
+  pagerSize: 5
+
 theme: PaperMod
 
 enableRobotsTXT: false
@@ -73,11 +75,12 @@ params:
 
   # home-info mode
   homeInfoParams:
-    content: <----------------->
-    Title: "Rahul Mishra "
-    content: <----------------->
-    Content: I am a computer science and  engineering student specialising in cyber security.
-             here you will find all my learnings and projects which i am doing while exploring the world of cyber security.  
+  Title: "Rahul Mishra"
+  Content: >
+    I am a computer science and engineering student specialising in cyber security.
+    Here you will find all my learnings and projects which I am doing while exploring
+    the world of cyber security.
+
 
   socialIcons:
     - name: github
