@@ -1,7 +1,7 @@
 ---
 title: "User Mode debugging using windbg"
 date: 2026-01-13
-draft: false
+draft: False
 --- 
 
 The way to start Debugging in User Mode is in one of two ways:
