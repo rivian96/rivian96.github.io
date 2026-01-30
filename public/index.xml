@@ -19,6 +19,37 @@
 &lt;p&gt;So, &lt;strong&gt;Anti-debugging&lt;/strong&gt; means putting &lt;em&gt;code inside a program&lt;/em&gt; that tries to &lt;strong&gt;detect if someone is debugging it&lt;/strong&gt;, and &lt;em&gt;behaves differently (or stops)&lt;/em&gt;  if it detects one.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Anti-Debugging Series(NtGlobalFlag)</title>
+      <link>http://localhost:1313/blogs/ntglobalflag/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/ntglobalflag/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hey, hope you’re doing well :)&lt;/strong&gt;&lt;br&gt;
+We’re back again with another &lt;strong&gt;anti-debugging technique&lt;/strong&gt; commonly used by &lt;strong&gt;threat actors&lt;/strong&gt;.&lt;br&gt;
+This time, we’ll be looking at how attackers detect debuggers by &lt;strong&gt;examining the value of&lt;/strong&gt; &lt;strong&gt;​&lt;code&gt;NtGlobalFlag&lt;/code&gt;​&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;NtGlobalFlag&lt;/strong&gt; field exists at offset 0x68 in the Process Environment Block on the 32-bit versions of Windows, and at offset &lt;strong&gt;0xBC&lt;/strong&gt; on the 64-bit versions of Windows. The value in that field is zero by default.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anti-Debugging Series(NtQueryInformationProcess)</title>
+      <link>http://localhost:1313/blogs/ntqueryinformationprocess/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/ntqueryinformationprocess/</guid>
+      <description>&lt;p&gt;This API call is among those that malware can use to spot the presence of a debugger&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blogs/NtQueryInformationProcess/image-20260130145114-e6escnd.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tell the compiler exactly what the hidden function looks like&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;typedef&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;NTSTATUS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WINAPI&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PNtQueryInformationProcess&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;HANDLE&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ProcessHandle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;DWORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ProcessInformationClass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;PVOID&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ProcessInformation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;DWORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ProcessInformationLength&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;PDWORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ReturnLength&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;The function &lt;code&gt;NtQueryInformationProcess&lt;/code&gt;​​ is an &lt;strong&gt;internal&lt;/strong&gt; Windows function. It is not listed in the standard instruction manuals (header files) that come with your compiler. If you tried to use it directly, the compiler would scream, &amp;ldquo;I don&amp;rsquo;t know what this is!&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>User Mode debugging using windbg</title>
       <link>http://localhost:1313/blogs/user-mode-debugging-with-windbg/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>

@@ -158,6 +158,41 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Stack allignment problem
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>While learning about ret2libc exploitation, I encountered a stack alignment issue that initially confused me. After spending some time debugging, I finally understood why we add that extra ret instruct for the solution. I thought it would be valuable to share this insight with you all, in case it helps someone facing the same problem.
+‍
+Lets look at the memory layout
+‍
+Our key interest Right now, is the stack!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-10 00:00:00 +0000 UTC'>June 10, 2025</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>1425 words</span>&nbsp;·&nbsp;<span>Me</span></footer>
+  <a class="entry-link" aria-label="post link to The Stack allignment problem" href="http://localhost:1313/blogs/stack-allignment-problem/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Analysing Brbbot
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In the previous article we unpacked the sample using various methods. In this post we will do static and dynamic analysis on the given sample.
+‍
+Static analysis
+The sample communicates over the internet, possibly to a C2 server, using DNS resolution, HTTP GET/POST, and low-level sockets. It builds and sends HTTP requests, reads headers, and handles responses.
+‍
+The malware uses encryption to protect its data or payload, likely for obfuscation or C2 encryption.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-10 00:00:00 +0000 UTC'>May 10, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>935 words</span>&nbsp;·&nbsp;<span>Me</span></footer>
+  <a class="entry-link" aria-label="post link to Analysing Brbbot" href="http://localhost:1313/blogs/brbbot-analysis/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Return to mprotect (defeating NX)
     </h2>
   </header>
