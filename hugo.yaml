@@ -77,7 +77,7 @@ params:
     Content: >
       I am a computer science and engineering student specialising in cyber security.
       Here you will find all my learnings and projects which I am doing while exploring
-      the world of cyber security.
+      cyber security.
 
   socialIcons:
     - name: github
