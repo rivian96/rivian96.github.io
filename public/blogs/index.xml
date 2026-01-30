@@ -27,6 +27,16 @@
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blogs/user-mode-debugging-with-windbg/image-20250825141116-xjndhud.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Anti-Debugging Series(IsDebuggerPresent)</title>
+      <link>http://localhost:1313/blogs/isdebuggerpresent/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/isdebuggerpresent/</guid>
+      <description>&lt;p&gt;Hey everyone, Welcome to the anti-debugging series, Very recently i started learning about these concepts and its always better to document our learning which can be beneficial for others too. So I will be sharing this via some blogs, so lets get started :)&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What really is Anti-debugging??&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So, &lt;strong&gt;Anti-debugging&lt;/strong&gt; means putting &lt;em&gt;code inside a program&lt;/em&gt; that tries to &lt;strong&gt;detect if someone is debugging it&lt;/strong&gt;, and &lt;em&gt;behaves differently (or stops)&lt;/em&gt;  if it detects one.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Process Explorer</title>
       <link>http://localhost:1313/blogs/process-explorer/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
