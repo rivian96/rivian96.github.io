@@ -83,8 +83,8 @@ So, Anti-debugging means putting code inside a program that tries to detect if s
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
-    <meta property="article:published_time" content="2025-07-16T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-07-16T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-01-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-29T00:00:00+00:00">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Anti-Debugging Series(IsDebuggerPresent)">
 <meta name="twitter:description" content="Hey everyone, Welcome to the anti-debugging series, Very recently i started learning about these concepts and its always better to document our learning which can be beneficial for others too. So I will be sharing this via some blogs, so lets get started :)
@@ -126,8 +126,8 @@ So, Anti-debugging means putting code inside a program that tries to detect if s
   "articleBody": "Hey everyone, Welcome to the anti-debugging series, Very recently i started learning about these concepts and its always better to document our learning which can be beneficial for others too. So I will be sharing this via some blogs, so lets get started :)\n‍\nWhat really is Anti-debugging??\nSo, Anti-debugging means putting code inside a program that tries to detect if someone is debugging it, and behaves differently (or stops) if it detects one.\nAnd btw a debugger is a tool used to inspect and step through code while it’s running. Anti-debugging tries to make that hard or obvious.\n‍\nThere are some use cases of anti-debugging\nSoftware companies protecting intellectual property Malware trying to hide from analysts Hackers trying to stop reverse-engineering ‍\n‍\nCore Classes (Types) of Anti-Debugging\nEach one checks for different signs that a debugger is present, we will discuss them one by one throughout this series.\nAnti-Debugging Methods │ ├─ API-Based ├─ Exception-Based ├─ Process \u0026 Thread Block ├─ Modified Code ├─ Hardware \u0026 Register └─ Timing \u0026 Latency ‍\nAPI-Based Anti-Debugging\nAPI stands for Application Programming Interface and these are Functions provided by the operating system to access the services and resources provided by the OS.\nwe will be focused on the Microsoft Windows operating system API\n‍\nThese are function calls Provided by windows that check for a debugger:\nIsDebuggerPresent() Checx` ‍\nIsDebuggerPresent\nWhen learning about anti-debugging, we first get introduced to the IsDebuggerPresent() function. This function analyzes the process block of a target process to determine if the processes is running under the context of a debugging session.\nProcess Block???! whats that\n‍\nIn Windows, every running program has a special internal structure called the Process Environment Block (PEB) .\nThe operating system maintains this structure for each process. and in the image below you can see a field called BeingDebugged this is important for us.\nAnd btw there is something called as the Vergilius Project which is a community-driven repository that exposes the raw, internal structures of Windows kernels. We can see the members of the PEB here so we will be using this as reference.\n‍\n‍\n‍\n‍\nSo, When a Program calls IsDebuggerPresent\n//Prototype: BOOL WINAPI IsDebuggerPresent(void); if (IsDebuggerPresent()) { // Debugger Detected - Do Something Here } else { // No Debugger Detected - Continue } ‍\n‍\nEnough theory Lets see this in action!\nhttps://www.virustotal.com/gui/file/8fc9e35142a017e3cdd1b1941fc2f8db1d0f5c3c203f322f64c5f50f0507df0d So this malware detects the debug-environment, lets load this malware inside the debugger\n‍\n‍\nLets load the Program Again inside x64dbg and try to fix this Problem!\n‍\nRight click on the CPU tab –\u003e Search For –\u003e Current Region –\u003e Intermodular Calls\n‍\n‍\n‍\n‍\nYou Remember Right!!\nAs per the Documentation, Right after calling IsDebuggerPresent Function it will return a Non Zero value in Rax register if we are running the program inside a debugger.\nPresently Rax contains some value(before IsdebuggerPresent is Called)\n‍\n‍\nAfter IsDebuggerPresent is called it returns the value 1 which RAX now holds\nYes we can definetly change the value of RAX to 0 and it will be done! well nooo……. this approach is not that efficient (we need to change the value of RAX everytime IsDebuggerPresent is called).\nSo let’s actually Discuss a better of way defeating this anti-debugging technique .You are ready right!!!!!\n‍\nWe can also see the PEB inside x64dbg to do that press CTRL + G and write peb(), this will allow us to view the process environment block\n‍\nIsDebuggerPresent Reads that byte at offset 2\nSo another way to defeat this defense could be to overwrite that value from 1 to 0 at offset 2, this way whenever IsdebuggerPresent function will be called it will return 0.\n‍\n‍\n‍\nThe debugger will immediately flag this modification by turning the text of that specific byte red. and we are good to go\nBtw, Instead of you manually hunting down these bytes and changing it to 00 every time you restart the application, there is a pluging called ScyllaHide which intercepts the program’s checks and feeds it “fake” clean data.\n‍\nInstead of calling IsDebuggerPresent, the specimen can manually check the BeingDebugged field in the PEB.\nmov eax,fs:[30h] mov eax,[eax+2] test eax,eax We will talk about the fs and gs segment registers in next blog. When we will learn about NtGlobalFlag stay tuned :)\n‍\n‍\n‍\n",
   "wordCount" : "732",
   "inLanguage": "en",
-  "datePublished": "2025-07-16T00:00:00Z",
-  "dateModified": "2025-07-16T00:00:00Z",
+  "datePublished": "2026-01-29T00:00:00Z",
+  "dateModified": "2026-01-29T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Me"
@@ -199,7 +199,7 @@ So, Anti-debugging means putting code inside a program that tries to detect if s
     <h1 class="post-title entry-hint-parent">
       Anti-Debugging Series(IsDebuggerPresent)
     </h1>
-    <div class="post-meta"><span title='2025-07-16 00:00:00 +0000 UTC'>July 16, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>732 words</span>&nbsp;·&nbsp;<span>Me</span>&nbsp;|&nbsp;<span>
+    <div class="post-meta"><span title='2026-01-29 00:00:00 +0000 UTC'>January 29, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>732 words</span>&nbsp;·&nbsp;<span>Me</span>&nbsp;|&nbsp;<span>
     <a href="https://github.com/rivian96/rivian96.github.io/content/blogs/IsDebuggerPresent%28%29.md" rel="noopener noreferrer edit" target="_blank">Suggest Changes</a>
 </span>
 
@@ -336,15 +336,10 @@ The operating system maintains this structure for each process. and in the image
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/blogs/user-mode-debugging-with-windbg/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>User Mode debugging using windbg</span>
-  </a>
-  <a class="next" href="http://localhost:1313/blogs/process-explorer/">
+  <a class="next" href="http://localhost:1313/blogs/user-mode-debugging-with-windbg/">
     <span class="title">Next »</span>
     <br>
-    <span>Process Explorer</span>
+    <span>User Mode debugging using windbg</span>
   </a>
 </nav>
 
